@@ -1,0 +1,17 @@
+<html>
+<script>
+
+    age = document.getElementById("my-age")
+        
+    setInterval(() => {
+        let time = dayjs().diff(dayjs(974246400000), 'year', true);
+        age.innerText = time.toString().substring(0, 12);
+    }, 50);
+        
+</script>
+<body>
+
+Hi! I'm Matt, a freelance junior developer.<br>
+I'm <div id="my-age"> </div> years old and living in South Wales.
+</body>
+</html>

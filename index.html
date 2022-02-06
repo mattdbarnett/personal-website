@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="src\styling\styling.css">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet"> 
+<script src = "node_modules\jquery\dist\jquery.js"></script>
+<script src = "node_modules\package\dayjs.min.js"></script>
+<script src="src\scripts\title-script.js"></script> 
+</head>
+
+<script>
+  $(document).ready(function(){
+
+    var disableSpam = false;
+    var transLength = 200;
+    var content = "#content";
+
+    $(content).load("about-me.html");
+    $(content).css('opacity', '0');
+    $(content).animate({opacity: 1, top: '-=10px'}, transLength);
+
+    $("#about-me").click(function(){
+      if (disableSpam === false) {
+        contentTransition("about-me.html")
+      }
+    });
+
+    $("#experience").click(function(){
+      if (disableSpam === false) {
+        contentTransition("experience.html")
+      }
+    });
+
+    $("#projects").click(function(){
+      if (disableSpam === false) {
+        contentTransition("projects.html")
+      }
+    });
+
+    $("#links").click(function(){
+      if (disableSpam === false) {
+        contentTransition("links.html")
+      }
+    });
+
+    function contentTransition(page) {
+      disableSpam = true
+      $(content).animate({opacity: 0, top: '+=10px'}, transLength, function() {
+        $(content).load(page);
+        $(content).animate({opacity: 1, top: '-=10px'}, transLength, function() {
+          disableSpam = false
+        });
+      });
+    }
+  });
+
+</script>
+
+  <h1>
+    <span
+      class="txt-type"
+      data-period="4000"
+      data-rotate='["Welcome!", "This is my personal website!", "Be sure to look around!"]'></span>
+  </h1>
+
+  <nav>
+    <a class="nav" id="about-me">
+      <label class="middle">About Me</label>
+    </a>
+    <a class="nav" id="experience">
+      <label class="middle">Experience</label>
+    </a>
+    <a class="nav" id="projects">
+      <label class="middle">Projects</label>
+    </a>
+    <a class="nav" id="links">
+      <label class="middle">Links</label>
+    </a>
+  </nav>
+
+<body>
+
+<div id="content">
+
+</div>
+
+</body>
+</html>
