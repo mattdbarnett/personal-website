@@ -10,7 +10,4 @@ jobs:
     - uses: lauchacarro/Azure-Storage-Action@v1.0
       with:
         enabled-static-website: 'true'
-        folder: ''
-        index-document: 'index.html'
-        error-document: 'index.html' 
         connection-string: ${{ secrets.CONNECTION_STRING }}
