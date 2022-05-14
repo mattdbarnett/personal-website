@@ -1,10 +1,7 @@
 name: DeployWebsiteToAzureStorage
  
-on:
-  push:
-    branches:
-      - master
- 
+on: [push]
+
 env:
   AZURE_RESOURCE_GROUP: mattdbarnett_group
   BLOB_STORAGE_ACCOUNT_NAME: mattdbarnett
