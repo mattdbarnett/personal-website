@@ -1,7 +1,7 @@
 
 html,body {
   font-family: 'Manrope';
-  font-size: 18px;
+  font-size: 1.1em;
   padding: 1em 2em;
   background: #1f161f;
   color: #E42C6A;
@@ -13,10 +13,18 @@ h1,h2 {
 }
 
 h1 { 
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: bold;
   text-align: center;
   margin: 0 auto 0 auto;
+}
+
+.txt-type {
+  min-height: 5em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 h2 {
@@ -42,7 +50,7 @@ nav a{
   margin: 2px;
   padding: 10px;
 
-  font-size: 16px;
+  font-size: 0.9em;
   text-align: center;
   color: white;
 
@@ -154,6 +162,7 @@ nav a:hover label.middle:before {
   font-weight: bold;
   position: absolute;
   text-align: center;
+  font-size: 0.8em;
   top: 50%;
   left: 50%;
   
@@ -199,11 +208,10 @@ nav a:hover label.middle:before {
 
 #project-grid {
   display: grid;
+  grid-template-columns: auto;
   justify-content: center;
-  align-content: center;
 
   gap: 30px;
-  grid-auto-flow: column;
 }
 
 /* Links */
