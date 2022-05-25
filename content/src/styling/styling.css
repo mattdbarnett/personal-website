@@ -184,6 +184,20 @@ nav a:hover label.middle:before {
   color: #df86a3;
 }
 
+::-webkit-scrollbar {
+  width: 20px
+}
+
+::-webkit-scrollbar-track {
+  background: #A50038;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #df86a3;
+}
+
+
+
 /* - IDs - */
 
 /* All */
