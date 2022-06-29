@@ -222,10 +222,21 @@ nav a:hover label.middle:before {
 
 #project-grid {
   display: grid;
-  grid-template-columns: auto;
   justify-content: center;
 
   gap: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  #project-grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  #project-grid {
+    grid-template-columns: auto;
+  }
 }
 
 /* Links */
