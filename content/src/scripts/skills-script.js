@@ -12,10 +12,10 @@ function containerClick(skill) {
       content =
         "I learnt Flutter throughout my final year at University. It was the framework my \
                     team and I used during our <a class='link' href='https://github.com/mattdbarnett/shipping-inspection-app'> \
-                    final year university group project for Idwal Vessel Inspections.</a> <br> Since then, I've used it in numerous \
+                    final year university group project for Idwal Vessel Inspections.</a> Since then, I've used it in numerous \
                     personal projects, such as my <a class='link' href='https://github.com/mattdbarnett/activito-app'> \
-                    personal activity logger</a>. Not only is it my go-to choice for mobile development, it is the framework \
-                    that I am most comfortable developing software with.";
+                    personal activity logger</a>. Not only is it my go-to choice for mobile development, it is my favourite \
+                    framework to develop software within.";
       break;
     case "dart":
       heading = "Dart";
@@ -69,7 +69,7 @@ function containerClick(skill) {
       heading = "Java";
       content =
         "Learning Java was a focal point during the first and second year of my undergraduate degree. \
-                    I learnt how to create tests (JUnit), simulations, command-line applications and webapps (with Thymeleaf). \
+                    I learnt how to create tests (JUnit), simulations, command-line applications and webapps (with ThymeLeaf). \
                     I then applied these skills to my Second Year Group Project where I developed a web-application using Spring Boot for \
                     <a class='link' href='https://github.com/mattdbarnett/cu-staff-reflection-webapp'>Cardiff University staff to reflect on their work</a> \
                     and my Second Year Individual Project when I developed a \
@@ -96,23 +96,82 @@ function containerClick(skill) {
       heading = "HTML";
       content = 
         "I learnt HTML during Secondary School and have continued using it since as it is an essential element of \
-                    most web development tech stacks. I have used it in every web-based project I have particiated \
+                    most web development tech stacks. I have used it in many web-based projects \
                     in to construct the layout of webpages.";
       break;
     case "css":
       heading = "CSS";
       content = 
         "I learnt CSS during Secondary School and have continued using it since as it is an essential element of \
-                    most web development tech stacks. I have used it in every web-based project I have particiated \
+                    most web development tech stacks. I have used it in many web-based projects \
                     in to construct the styling of web-elements.";
       break;
     case "mysql":
       heading = "MySQL";
-      content = ".";
+      content = 
+        "I learnt MySQL during the first and second year of my undergraduate degree at Cardiff University. \
+                    I then used it throughout multiple university assignments, including when I need to create \
+                    a database system for the \
+                    <a class='link' href='https://github.com/mattdbarnett/cu-staff-reflection-webapp'>reflective \
+                    web-application for Cardiff University staff</a> during second year.";
+      break;
+    case "git":
+      heading = "Git";
+      content = 
+        "Since learning Git during the first year of my undergraduate degree at Cardiff University, I've utilised \
+                    it as my primary form of versional control. This is evidenced best on \
+                    <a class='link' href='https://github.com/mattdbarnett'> my personal GitHub profile</a> where \
+                    you can view a collection of my projects that I have used Git with."
+      break;
+    case "github":
+      heading = "GitHub";
+      content = 
+        "I have been using GitHub to store my personal projects for a few years now. As a result, I have a solid \
+                    grasp on the tools the website provides. This is evidenced best by \
+                    <a class='link' href='https://github.com/mattdbarnett'> my personal GitHub profile</a>."
+      break;
+    case "gitlab":
+      heading = "GitLab";
+      content = 
+        "I learnt GitLab throughout my tenure at Cardiff University as it was the online version control tool \
+                    provided and supported by the university. As a result, I have a solid grasp on operating \
+                    on and managing projects when using it."
+      break;
+    case "androidstudio":
+      heading = "Android Studio";
+      content =
+        "I learnt Android Studio during the first and second year of my undergraduate degree at Cardiff \
+                    University. It is my IDE of choice for developing native Android applications and I \
+                    have experience using it to develop Flutter projects."
+      break;
+    case "intellijidea":
+      heading = "IntelliJ IDEA";
+      content =
+        "I learnt IntelliJ IDEA during the second year of my undergraduate degree at Cardiff University. \
+                    It is my IDE of choice for developing Java-based software."
+      break;
+    case "atom":
+      heading = "Atom";
+      content =
+        "I learnt Atom during the first year of my undergraduate degree at Cardiff University. I have \
+                    experience using it to develop Python-based software."
+      break;
+    case "vscode":
+      heading = "Visual Studio Code";
+      content =
+        "I learnt Visual Studio Code during the third year of my undergraduate degree at Cardiff University. \
+                    It is currently my favourite IDE and it is my preference when developing Flutter applications, \
+                    Godot applications and websites."
+      break;
+    case "visualstudio":
+      heading = "Visual Studio";
+      content =
+        "I learnt Visual Studio while studying Computer Science at A-Level at Shelley College. It is my IDE \
+                    of choice for developing .NET applications, both in C# and Visual Basic."
       break;
     default:
-      heading = "EMPTY H";
-      content = "EMPTY C";
+      heading = "ERROR! EMPTY H";
+      content = "ERROR! EMPTY C";
   }
 
   document.getElementById("modal-h").innerHTML = heading;
