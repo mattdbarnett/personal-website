@@ -178,7 +178,7 @@ function containerClick(skill) {
   document.getElementById("modal-p").innerHTML = content;
 }
 
-var span = document.getElementsByClassName("skills-modal-close")[0];
+var span = document.getElementsByClassName("modal-close")[0];
 
 span.onclick = function() {
   modal.style.display = "none";

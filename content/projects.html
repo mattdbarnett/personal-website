@@ -1,12 +1,24 @@
 <html>
 
+<head>
+    <script src="src/scripts/projects-script.js"> </script>
+</head>
+
 <body>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <h2 id="modal-h">heading</h2>
+          <p id="modal-p">content</p> <br>
+          <span class="modal-close">&times;</span>
+        </div>
+    </div>
 
     Here are my projects! Hover over one for its name and a brief description.
     <div id="project-grid">
 
         <div class="project-container">
-            <a class="project-thumb" href="https://github.com/mattdbarnett/infinite-colour-runner-game">
+            <a class="project-thumb" onClick="containerClick('upwn')">
                 <img class="project-thumb-image" src="src\media\upwn-game.png" alt="UPWN Menu Screenshot">
                 <img class="project-thumb-image" src="src\media\upwn-custom.png" alt="UPWN Splash-Screen Screenshot">
                 <img class="project-thumb-image" src="src\media\upwn-menu.png" alt="UPWN Game Screenshot">
@@ -19,7 +31,7 @@
         </div>
 
         <div class="project-container">
-            <a class="project-thumb" href="https://github.com/mattdbarnett/shipping-inspection-app">
+            <a class="project-thumb" onClick="containerClick('idwal')">
                 <img class="project-thumb-image" src="src\media\idwal-comms.png" alt="Idwal App Home Page">
                 <img class="project-thumb-image" src="src\media\idwal-survey.png" alt="Idwal App Survey Page">
                 <img class="project-thumb-image" src="src\media\idwal-home.png" alt="Idwal App Communciations Page">
@@ -32,7 +44,7 @@
         </div>
 
         <div class="project-container">
-            <a class="project-thumb" href="https://github.com/mattdbarnett/unicalc">
+            <a class="project-thumb" onClick="containerClick('unicalc')">
                 <img class="project-thumb-image" src="src\media\unicalc-results.png" alt="UniCalc Results Window">
                 <img class="project-thumb-image" src="src\media\unicalc-assessments.png" alt="UniCalc Assessments">
                 <img class="project-thumb-image" src="src\media\unicalc-modules.png" alt="UniCalc Modules">
@@ -45,7 +57,7 @@
         </div>
 
         <div class="project-container">
-            <a class="project-thumb" href="https://github.com/mattdbarnett/robot-ai-simulation">
+            <a class="project-thumb" onClick="containerClick('robot.ai')">
                 <img class="project-thumb-image" src="src\media\robot-example2.png" alt="Idwal App Home Page">
                 <img class="project-thumb-image" src="src\media\robot-example1.png" alt="Idwal App Survey Page">
                 <img class="project-thumb-image" src="src\media\robot-home.png" alt="Idwal App Communciations Page">
@@ -58,7 +70,7 @@
         </div>
 
         <div class="project-container">
-            <a class="project-thumb" href="https://github.com/mattdbarnett/activito-app">
+            <a class="project-thumb" onClick="containerClick('activito')">
                 <img class="project-thumb-image" src="src\media\activito-records.png" alt="Activito Records Page">
                 <img class="project-thumb-image" src="src\media\activito-types.png" alt="Activito Types Page">
                 <img class="project-thumb-image" src="src\media\activito-home.png" alt="Activito Home Page">
