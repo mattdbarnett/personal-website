@@ -110,7 +110,7 @@ function containerClick(skill) {
       heading = "MySQL";
       content = 
         "I learnt MySQL during the first and second year of my undergraduate degree at Cardiff University. \
-                    I then used it throughout multiple university assignments, including when I need to create \
+                    I then used it throughout multiple university assignments, including when I needed to create \
                     a database system for the \
                     <a class='link' href='https://github.com/mattdbarnett/cu-staff-reflection-webapp'>reflective \
                     web-application for Cardiff University staff</a> during second year.";
@@ -176,6 +176,12 @@ function containerClick(skill) {
 
   document.getElementById("modal-h").innerHTML = heading;
   document.getElementById("modal-p").innerHTML = content;
+}
+
+var span = document.getElementsByClassName("skills-modal-close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
 }
 
 window.onclick = function(event) {
