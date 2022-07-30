@@ -267,6 +267,19 @@ nav a:hover label.middle:before {
   border-radius: 30px;
 }
 
+.skills-modal-close {
+  color: #df86a3;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.skills-modal-close:hover,
+.skills-modal-close:focus {
+  color: #E42C6A;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 700px) {
   .skills-modal-content {
     width: 50%;
