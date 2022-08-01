@@ -1,3 +1,4 @@
+
 var modal = document.getElementById("modal");
 
 var heading;

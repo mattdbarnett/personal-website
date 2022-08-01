@@ -1,18 +1,15 @@
 <html>
-<script>
 
-    age = document.getElementById("my-age")
-        
-    setInterval(() => {
-        let time = dayjs().diff(dayjs(974246400000), 'year', true);
-        age.innerText = time.toString().substring(0, 12);
-    }, 50);
-        
-</script>
+<head>
+    <script src="src/scripts/about-script.js"> </script>
+</head>
+
 <body>
 
-Hi! I'm Matt, a freelance junior-developer from Huddersfield, West Yorkshire.<br>
-I have a <a class="link" href="qual-degree.html" target="_blank"> degree in Software Engineering</em></a> from Cardiff University.<br>
-I'm <div id="my-age"></div> &nbsp&nbsp&nbsp years old and currently living in Malton, North Yorkshire.
+    Hi! I'm Matt, a freelance junior-developer from Huddersfield, West Yorkshire.<br>
+    I have a <a class="link" href="qual-degree.html" target="_blank"> degree in Software Engineering</em></a> from
+    Cardiff University. <br>
+    I'm <span id="my-age"></span> years old and currently living in Malton, North Yorkshire.
 </body>
+
 </html>
