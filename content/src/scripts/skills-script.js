@@ -93,6 +93,19 @@ function containerClick(skill) {
                     <a class='link' href='https://github.com/mattdbarnett/cu-staff-reflection-webapp'>reflective \
                     web-application for Cardiff University staff</a>.";
       break;
+    case "php":
+        heading = "PHP";
+        content = 
+          "I have basic experience in PHP from various personal projects. However, I am currently learning how to \
+                    use the language in a professional context through my position at Merisis Technology Ltd by \
+                    developing features for web-applications using the Zend Framework.  ";
+        break;
+    case "zendframework":
+        heading = "Zend Framework 3";
+        content = 
+          "I'm learning Zend Framework at my current position at Merisis Technology Ltd to produce enterprise \
+                    PHP web-applications.";
+        break; 
     case "html":
       heading = "HTML";
       content = 
