@@ -103,7 +103,7 @@ function containerClick(skill) {
     case "zendframework":
         heading = "Zend Framework 3";
         content = 
-          "I'm learning Zend Framework at my current position at Merisis Technology Ltd to produce enterprise \
+          "I'm learning Zend Framework at my current position at Merisis Technology Ltd in order to produce enterprise-grade \
                     PHP web-applications.";
         break; 
     case "html":
