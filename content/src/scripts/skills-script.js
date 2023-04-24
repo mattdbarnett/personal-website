@@ -96,15 +96,26 @@ function containerClick(skill) {
     case "php":
         heading = "PHP";
         content = 
-          "I have basic experience in PHP from various personal projects. However, I am currently learning how to \
-                    use the language in a professional context through my position at Merisis Technology Ltd by \
-                    developing features for web-applications using the Zend Framework.  ";
+          "I have intermediate knowledge & experience in PHP, primarily from my current position at Merisis \
+                    Technology Ltd. where I have been using the language - in combination with multiple frameworks - \
+                    to develop multiple commerical-grade internal and external web-applications for clients since August 2022.";
         break;
     case "zendframework":
-        heading = "Zend Framework 3";
+        heading = "Zend Framework 2/3 / Laminas";
         content = 
-          "I'm learning Zend Framework at my current position at Merisis Technology Ltd in order to produce enterprise-grade \
-                    PHP web-applications.";
+          "I have intermediate knowledge & experience in utilising Zend/Laminas, primarily from my current position at \
+                    Merisis Technology Ltd. I have used the framework - in conjunction with PHP - to develop multiple \
+                    commerical-grade web-applications for clients since August 2022.";
+        break; 
+    case "wordpress":
+        heading = "WordPress";
+        content = 
+        "I have strong knowledge & experience in developing for Wordpress applications, primarily from my current position at \
+                  Merisis Technology Ltd. I have used the framework to develop commerical-grade web-applications in conjunction \
+                  with many highly utilised Wordpress plugins, such as \
+                  <a class='link' href='https://www.advancedcustomfields.com/' target='_blank'>'ACF'</a>, \
+                  <a class='link' href='https://www.wordfence.com/' target='_blank'>'WordFence'</a> and \
+                  <a class='link' href='https://metabox.io/' target='_blank'>'Meta Box'</a>. ";
         break; 
     case "html":
       heading = "HTML";
@@ -126,7 +137,7 @@ function containerClick(skill) {
         "I learnt MySQL during the first and second year of my undergraduate degree at Cardiff University. \
                     I then used it throughout multiple university assignments, including when I needed to create \
                     a database system for the \
-                    <a class='link' href='https://github.com/mattdbarnett/cu-staff-reflection-webapp'>reflective \
+                    <a class='link' href='https://github.com/mattdbarnett/cu-staff-reflection-webapp' target='_blank'>reflective \
                     web-application for Cardiff University staff</a> during second year.";
       break;
     case "git":
@@ -134,7 +145,7 @@ function containerClick(skill) {
       content = 
         "Since learning Git during the first year of my undergraduate degree at Cardiff University, I've utilised \
                     it as my primary form of versional control. This is evidenced best on \
-                    <a class='link' href='https://github.com/mattdbarnett'> my personal GitHub profile</a> where \
+                    <a class='link' href='https://github.com/mattdbarnett' target='_blank'> my personal GitHub profile</a> where \
                     you can view a collection of my projects that I have used Git with."
       break;
     case "github":
@@ -142,7 +153,7 @@ function containerClick(skill) {
       content = 
         "I have been using GitHub to store my personal projects for a few years now. As a result, I have a solid \
                     grasp on the tools the website provides. This is evidenced best by \
-                    <a class='link' href='https://github.com/mattdbarnett'> my personal GitHub profile</a>."
+                    <a class='link' href='https://github.com/mattdbarnett' target='_blank'> my personal GitHub profile</a>."
       break;
     case "gitlab":
       heading = "GitLab";
